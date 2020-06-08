@@ -10,9 +10,9 @@ import javax.persistence.Table;
 @Entity
 @Table(name="vendor")
 public class Vendor {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name="id")
+	 @Id
+	 @GeneratedValue(strategy = GenerationType.IDENTITY)
+	 @Column(name="id")
 	private Integer vendorId;
 	@Column(name="name")
 	private String vendorName;
@@ -33,10 +33,7 @@ public class Vendor {
 		this.vendorPassword = vendorPassword;
 	}
 	
-	
-//	@Id
-//	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	public int getVendorId() {
+	public Integer getVendorId() {
 		return vendorId;
 	}
 
